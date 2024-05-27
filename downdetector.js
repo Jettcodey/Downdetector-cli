@@ -78,7 +78,7 @@ class DownDetector {
                 var screen = blessed.screen();
 
                 var line = contrib.line({
-                    width: 90,
+                    width: 120,
                     height: 30,
                     left: 3,
                     top: 3,

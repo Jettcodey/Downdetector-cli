@@ -16,7 +16,7 @@ async function requestSite() {
         process.stdout.write("\nPress any key to exit...");
         process.exit();
     } else if (siteDir.length < 1) {
-        process.stdout.write("\nService name must be at least 3 characters long.\n");
+        process.stdout.write("\nService name must be at least 1 character long.\n");
         requestSite();
     } else {
         console.clear();
