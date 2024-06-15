@@ -143,6 +143,7 @@ module.exports = {
     'reddead': 'red-dead-redemption',
     'ad': 'anydesk',
     'any': 'anydesk',
-    'ea' : 'ea'
+    'ea': 'ea',
+    'pubg': 'playbattlegrounds'
 
 };

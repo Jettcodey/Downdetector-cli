@@ -106,21 +106,23 @@ class DownDetector {
 
             let valueInTextDanger;
             try {
-                await page.waitForSelector(".text-danger", { timeout: 2500 });
+                await page.waitForSelector(".desktop-only", { timeout: 2500 });
                 valueInTextDanger = await page.evaluate(() => {
-                    const textDangerElement = document.querySelector(".text-danger");
+                    const textDangerElement = document.querySelector(".h2.entry-title");
                     return textDangerElement ? textDangerElement.textContent.trim() : null;
                 });
             } catch (error) {
                 
             }
 
+            /*
             if (!valueInTextDanger) {
                 valueInTextDanger = await page.evaluate(() => {
                     const entryTitleElement = document.querySelector(".h2.entry-title");
                     return entryTitleElement ? entryTitleElement.textContent.trim() : null;
                 });
             }
+            */
 
             const myFinalObj = {
                 url: url,
